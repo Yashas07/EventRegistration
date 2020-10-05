@@ -1,3 +1,9 @@
 body {
-    background :url('../images/event1.jpg') no-repeat;
+    background :url('../images/event3.jpeg') no-repeat;
+}
+
+.back-design {
+    color : black;
+    font-size : 1.5rem;
+    font-family : Arial, Helvetica, sans-serif;
 }
