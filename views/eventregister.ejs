@@ -13,7 +13,7 @@
              <strong>Register your event</strong>
          </h1>
          <br>
-    <form class="needs-validation" novalidate>
+    <form action="/eventregister" method="POST"  class="needs-validation" novalidate>
         <div class="form-row  back-design">
           <div class="col-md-4 mb-3">
             <label for="validationCustom01">Event Name</label>
@@ -21,6 +21,9 @@
             <div class="valid-feedback">
               Looks good!
             </div>
+            <div class="invalid-feedback">
+                Please provide a valid event name.
+              </div>
           </div>
           <div class="col-md-4 mb-3">
             <label for="validationCustom02">Administrator</label>
@@ -28,6 +31,9 @@
             <div class="valid-feedback">
               Looks good!
             </div>
+            <div class="invalid-feedback">
+                Please provide a valid name.
+              </div>
           </div>
           <div class="col-md-4 mb-3">
             <label for="validationCustomUsername">Email</label>
