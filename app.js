@@ -17,7 +17,13 @@ app.use(bodyparser.urlencoded({ extended : false}));
 app.use(eventRoutes);
 
 
-
+db.connect('mongodb+srv://shreyas:NRXAmiWlaDuuXqtq@cluster0-pydiw.mongodb.net/EventRegistration?retryWrites=true&w=majority')
+.then(res => {
+    console.log('database connected');
+})
+.catch(err => {
+    console.log(err);
+})
 
 app.listen(8000,() => {
     console.log("Server started");
