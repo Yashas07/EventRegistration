@@ -17,7 +17,8 @@ app.use(bodyparser.urlencoded({ extended : false}));
 app.use(eventRoutes);
 
 
-db.connect('mongodb+srv://shreyas:NRXAmiWlaDuuXqtq@cluster0-pydiw.mongodb.net/EventRegistration?retryWrites=true&w=majority')
+const MONGODB_URI = process.env.MONGODB_URI;
+db.connect(MONGODB_URI)
 .then(res => {
     console.log('database connected');
 })
