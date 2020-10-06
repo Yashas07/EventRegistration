@@ -25,6 +25,6 @@ db.connect('MongoURI')
     console.log(err);
 })
 
-app.listen(8000,() => {
+app.listen(PORT,() => {
     console.log("Server started");
 })
