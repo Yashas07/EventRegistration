@@ -21,6 +21,7 @@ const MONGODB_URI = process.env.MONGODB_URI;
 const PORT = process.env.PORT;
 db.connect(MONGODB_URI)
 .then(res => {
+    console.log(res);
     console.log('database connected');
 })
 .catch(err => {
@@ -28,5 +29,5 @@ db.connect(MONGODB_URI)
 })
 
 app.listen(PORT,() => {
-    console.log("Server started");
+    console.log("Server started at"+PORT);
 })
