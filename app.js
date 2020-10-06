@@ -18,7 +18,7 @@ app.use(eventRoutes);
 
 
 const MONGODB_URI = process.env.MONGODB_URI;
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 3000;
 db.connect(MONGODB_URI)
 .then(res => {
     console.log('database connected');
